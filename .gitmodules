@@ -1,0 +1,3 @@
+[submodule "odm_data_waterbury"]
+	path = odm_data_waterbury
+	url = https://github.com/OpenDroneMap/odm_data_waterbury
