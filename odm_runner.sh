@@ -1,3 +1,3 @@
 #!/bin/bash -l
-cat odm_qsub.sh.template | sed -e 's/replace_me/'$1'/g' > odm_qsub.sh.$1
-qsub odm_qsub.sh.$1
+cat odm_sbatch.sh.template | sed -e 's/replace_me/'$1'/g' > odm_sbatch.sh.$1
+sbatch odm_sbatch.sh.$1
