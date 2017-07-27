@@ -1,4 +1,4 @@
 #!/bin/bash -l
 #$ -J replace_me -D $(pwd)/replace_me -o $(pwd)/replace_me/output.$SLURM_JOB_NAME.$SLURM_JOB_ID
 cd $(pwd)/replace_me
-docker run --rm -v $(pwd)/images:/code/images -v $(pwd)/odm_orthophoto:/code/odm_orthophoto -v $(pwd)/odm_georeferencing:/code/odm_georeferencing opendronemap/opendronemap
+docker run -v $(pwd)/images:/code/images -v $(pwd)/odm_orthophoto:/code/odm_orthophoto -v $(pwd)/odm_georeferencing:/code/odm_georeferencing opendronemap/opendronemap
