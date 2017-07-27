@@ -1,4 +1,0 @@
-#!/bin/bash -l
-#$ -N replace_me -wd $(pwd)/replace_me -o $(pwd)/replace_me/output.$JOB_NAME.$JOB_ID
-cd $(pwd)/replace_me
-docker run --rm -d -v $(pwd)/images:/code/images -v $(pwd)/odm_orthophoto:/code/odm_orthophoto -v $(pwd)/odm_georeferencing:/code/odm_georeferencing opendronemap/opendronemap
